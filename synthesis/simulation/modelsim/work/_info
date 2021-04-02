@@ -1,0 +1,120 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/daniel/Documents/GitHub/handshake_memory/synthesis/simulation/modelsim
+Ememory
+Z1 w1617323883
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 27
+R0
+Z5 8/home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd
+Z6 F/home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd
+l0
+L8 1
+VAVlY:fFoib]R<]7i`ih4J0
+!s100 :7dCMEE6j1T0jl[D3jT8L1
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1617325841
+!i10b 1
+Z9 !s108 1617325841.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd|
+Z11 !s107 /home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+Z14 DEx4 work 6 memory 0 22 AVlY:fFoib]R<]7i`ih4J0
+!i122 27
+l51
+Z15 L23 44
+Z16 Vm0@^;01Zm=zjNGBCYn9JX3
+Z17 !s100 n^PHK]C<m7bzA[[U;[OB[0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Atb
+w1617325157
+R2
+R3
+R4
+R14
+!i122 10
+Z18 8/home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_tb.vhd
+Z19 F/home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_tb.vhd
+l27
+L8 48
+VLeMDc5zFF=l]N5JQR9JUe2
+!s100 [3z1IDSCCMC52?3o8Cc832
+R7
+32
+!s110 1617325160
+!i10b 1
+!s108 1617325160.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_tb.vhd|
+Z21 !s107 /home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_tb.vhd|
+!i113 1
+R12
+R13
+Ememory_tb
+Z22 w1617325818
+R2
+R3
+R4
+!i122 26
+R0
+R18
+R19
+l0
+L5 1
+V_kiS2gc@klE4Vk3RdCF4^2
+!s100 K:h_7;_e46:2;TAj@4dAB3
+R7
+32
+R8
+!i10b 1
+Z23 !s108 1617325840.000000
+R20
+R21
+!i113 1
+R12
+R13
+Atb
+R2
+R3
+R4
+DEx4 work 9 memory_tb 0 22 _kiS2gc@klE4Vk3RdCF4^2
+!i122 26
+l27
+L8 49
+V;z>]dPM`QA1_4cZ9eU;i_2
+!s100 UXSbzCNN8blD1dg`GJan41
+R7
+32
+R8
+!i10b 1
+R23
+R20
+R21
+!i113 1
+R12
+R13

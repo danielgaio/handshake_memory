@@ -1,0 +1,167 @@
+# Compile of memory_tb.vhd failed with 12 errors.
+# Compile of memory.vhd was successful.
+# 2 compiles, 1 failed with 12 errors.
+# Compile of memory_tb.vhd failed with 12 errors.
+# Compile of memory.vhd was successful.
+# 2 compiles, 1 failed with 12 errors.
+# Compile of memory_tb.vhd failed with 2 errors.
+# Compile of memory.vhd was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of memory_tb.vhd failed with 3 errors.
+# Compile of memory.vhd was successful.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of memory_tb.vhd failed with 2 errors.
+# Compile of memory.vhd was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of memory_tb.vhd was successful.
+# Compile of memory.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.memory_tb
+# vsim work.memory_tb 
+# Start time: 21:59:29 on Apr 01,2021
+# Loading std.standard
+# ** Error: (vsim-3173) Entity '/home/daniel/Documents/GitHub/handshake_memory/synthesis/simulation/modelsim/work.memory_tb' has no architecture.
+# Error loading design
+# End time: 21:59:30 on Apr 01,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 7
+# Compile of memory_tb.vhd failed with 3 errors.
+# Compile of memory.vhd was successful.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of memory_tb.vhd failed with 1 errors.
+# Compile of memory.vhd was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of memory_tb.vhd was successful.
+# Compile of memory.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.memory_tb
+# vsim work.memory_tb 
+# Start time: 22:03:25 on Apr 01,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_tb(tb)
+# Loading work.memory(rtl)
+# Break key hit
+vsim work.memory_tb
+# End time: 22:03:55 on Apr 01,2021, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 4
+# vsim work.memory_tb 
+# Start time: 22:03:55 on Apr 01,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_tb(tb)
+# Loading work.memory(rtl)
+# Compile of memory_tb.vhd failed with 1 errors.
+# Compile of memory.vhd was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of memory_tb.vhd failed with 1 errors.
+# Compile of memory.vhd was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of memory_tb.vhd failed with 1 errors.
+# Compile of memory.vhd was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of memory_tb.vhd was successful.
+# Compile of memory.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.memory_tb
+# End time: 22:07:52 on Apr 01,2021, Elapsed time: 0:03:57
+# Errors: 0, Warnings: 5
+# vsim work.memory_tb 
+# Start time: 22:07:52 on Apr 01,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_tb(tb)
+# Loading work.memory(rtl)
+add wave -position end  sim:/memory_tb/data_out_tb
+add wave -position end  sim:/memory_tb/address_tb
+add wave -position end  sim:/memory_tb/clk_tb
+run
+# ** Note: Sinais injetados
+#    Time: 0 ps  Iteration: 0  Instance: /memory_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of memory_tb.vhd was successful.
+# Compile of memory.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.memory_tb
+# End time: 22:10:47 on Apr 01,2021, Elapsed time: 0:02:55
+# Errors: 0, Warnings: 2
+# vsim work.memory_tb 
+# Start time: 22:10:47 on Apr 01,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_tb(tb)
+# Loading work.memory(rtl)
+add wave -position end  sim:/memory_tb/data_out_tb
+add wave -position end  sim:/memory_tb/address_tb
+add wave -position end  sim:/memory_tb/clk_tb
+run
+# ** Note: Sinais injetados
+#    Time: 0 ps  Iteration: 0  Instance: /memory_tb
+run
+# End time: 23:00:10 on Apr 01,2021, Elapsed time: 0:49:23
+# Errors: 0, Warnings: 1
