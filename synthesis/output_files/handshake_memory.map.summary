@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Thu Apr  1 21:55:28 2021
+Analysis & Synthesis Status : Failed - Sun Apr  4 19:32:39 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : handshake_memory
-Top-level Entity Name : memory
+Top-level Entity Name : top
 Family : Cyclone IV E
-Total logic elements : 4
-    Total combinational functions : 0
-    Dedicated logic registers : 4
-Total registers : 4
-Total pins : 13
-Total virtual pins : 0
-Total memory bits : 0
-Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total logic elements : N/A until Partition Merge
+    Total combinational functions : N/A until Partition Merge
+    Dedicated logic registers : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total memory bits : N/A until Partition Merge
+Embedded Multiplier 9-bit elements : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge

@@ -4,13 +4,14 @@ use ieee.std_logic_1164.all;
 entity memory_state_machine is
 
 	port(
-		clk		 		: in	std_logic;
-		ReqLeit	 		: inout	std_logic;	-- flag
-		Ack				: inout	std_logic;	-- flag
-		dado_ptr		: inout	std_logic;	-- flag
-		reset	 		: in	std_logic;
-		read_address	: out	std_logic;	-- flag
-		out_data		: out	std_logic
+		clk		 	: in	std_logic;
+		ReqLeit	 	: inout	std_logic;
+		Ack			: inout	std_logic;
+		dado_ptr	: inout	std_logic;
+		reset	 	: in	std_logic;
+		read_address: out	std_logic;
+		out_data	: out	std_logic
+		--output	 	: out	std_logic_vector(1 downto 0)
 	);
 
 end entity;
@@ -25,15 +26,16 @@ architecture rtl of memory_state_machine is
 
 begin
 
-	--process (reset, ReqLeit, Ack) begin
 	process (reset, ReqLeit, Ack) begin
 
 		if reset = '1' then
 			state <= s0;
 
-		elsif (rising_edge(clk)) then
-		--else
+		--elsif (rising_edge(clk)) then
+		else then
 
+			-- Determine the next state synchronously, based on
+			-- the current state and the input
 			case state is
 				when s0=>
 					if ReqLeit = '1' then
@@ -62,14 +64,11 @@ begin
 
 	-- Determine the output based only on the current state
 	-- and the input (do not wait for a clock edge).
-	process (state) begin
-
+	process (state, ReqLeit)
+	begin
 			case state is
 				when s0=>
-					Ack <= '0';
-					read_address <= '0';
-					dado_ptr <= '0';
-					out_data <= '0';
+					
 				when s1=>
 					read_address <= '1';
 					Ack <= '1';
@@ -81,7 +80,6 @@ begin
 					out_data <= '0';
 					dado_ptr <= '0';
 			end case;
-
 	end process;
 
 end rtl;

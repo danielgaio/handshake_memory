@@ -1,5 +1,5 @@
 Flow report for handshake_memory
-Thu Apr  1 21:55:28 2021
+Sun Apr  4 19:32:39 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,20 +41,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Apr  1 21:55:28 2021       ;
+; Flow Status                        ; Flow Failed - Sun Apr  4 19:32:39 2021      ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; handshake_memory                            ;
-; Top-level Entity Name              ; memory                                      ;
+; Top-level Entity Name              ; top                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 4                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 4                                           ;
-; Total registers                    ; 4                                           ;
-; Total pins                         ; 13                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/01/2021 21:55:19 ;
+; Start date & time ; 04/04/2021 19:32:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; handshake_memory    ;
 +-------------------+---------------------+
@@ -74,7 +74,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+------------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value    ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+------------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 176507751568776.161732491954325        ; --               ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 176507751568776.161757555229787        ; --               ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --               ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --               ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --               ; --          ; eda_board_design_signal_integrity ;
@@ -82,11 +82,11 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --               ; --          ; eda_simulation                    ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>           ; --          ; --                                ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --               ; --          ; eda_simulation                    ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --               ; memory      ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --               ; memory      ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --               ; memory      ; Top                               ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --               ; top         ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --               ; top         ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --               ; top         ; Top                               ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --               ; --          ; --                                ;
-; TOP_LEVEL_ENTITY                    ; memory                                 ; handshake_memory ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                    ; top                                    ; handshake_memory ; --          ; --                                ;
 +-------------------------------------+----------------------------------------+------------------+-------------+-----------------------------------+
 
 
@@ -95,8 +95,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 634 MB              ; 00:00:22                           ;
-; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:22                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 629 MB              ; 00:00:21                           ;
+; Total                ; 00:00:07     ; --                      ; --                  ; 00:00:21                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

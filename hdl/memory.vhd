@@ -9,13 +9,15 @@ entity memory is
 
 	generic(
 		DATA_WIDTH : natural := 8;
-		ADDR_WIDTH : natural := 6
+		ADDR_WIDTH : natural := 4
 	);
 
 	port (
-		clk		: in std_logic;
-		address	: in natural range 0 to 15;								-- 16 posicoes de memoria
-		data_out	: out std_logic_vector((DATA_WIDTH -1) downto 0)
+		clk			: in std_logic;
+		address		: in natural range 0 to 15;								-- 16 posicoes de memoria
+		read_address: in std_logic;
+		out_data	: in std_logic;											-- flag para permitir ou não a saida de dados da memória
+		data_out	: out std_logic_vector((DATA_WIDTH -1) downto 0)		-- dado saindo da memoria
 	);
 
 end memory;
@@ -32,7 +34,7 @@ architecture rtl of memory is
 		variable tmp : memory_t := (others => (others => '0'));
 	begin 
 		--for addr_pos in 0 to 2**ADDR_WIDTH - 1 loop
-		for address_pos in 0 to 15 loop 
+		for address_pos in 0 to 15 loop
 			-- Initialize each address with the address itself
 			tmp(address_pos) := std_logic_vector(to_unsigned(address_pos, DATA_WIDTH));
 		end loop;
@@ -51,13 +53,15 @@ architecture rtl of memory is
 begin
 
 	process(clk) begin
-		if(rising_edge(clk)) then
+		if(rising_edge(clk) and read_address = '1') then
 			--if(we = '1') then
 				--ram(addr) <= data;
 			--end if;
 
 			-- Register the address for reading
-			address_reg <= address;
+			if(out_data = '1') then
+				address_reg <= address;
+			end if;
 		end if;
 	end process;
 

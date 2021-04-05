@@ -1,29 +1,3 @@
-# Compile of memory_tb.vhd failed with 12 errors.
-# Compile of memory.vhd was successful.
-# 2 compiles, 1 failed with 12 errors.
-# Compile of memory_tb.vhd failed with 12 errors.
-# Compile of memory.vhd was successful.
-# 2 compiles, 1 failed with 12 errors.
-# Compile of memory_tb.vhd failed with 2 errors.
-# Compile of memory.vhd was successful.
-# 2 compiles, 1 failed with 2 errors.
-# Compile of memory_tb.vhd failed with 3 errors.
-# Compile of memory.vhd was successful.
-# 2 compiles, 1 failed with 3 errors.
-# Compile of memory_tb.vhd failed with 2 errors.
-# Compile of memory.vhd was successful.
-# 2 compiles, 1 failed with 2 errors.
-# Compile of memory_tb.vhd was successful.
-# Compile of memory.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.memory_tb
-# vsim work.memory_tb 
-# Start time: 21:59:29 on Apr 01,2021
-# Loading std.standard
-# ** Error: (vsim-3173) Entity '/home/daniel/Documents/GitHub/handshake_memory/synthesis/simulation/modelsim/work.memory_tb' has no architecture.
-# Error loading design
-# End time: 21:59:30 on Apr 01,2021, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 7
 # Compile of memory_tb.vhd failed with 3 errors.
 # Compile of memory.vhd was successful.
 # 2 compiles, 1 failed with 3 errors.
@@ -35,51 +9,24 @@ vsim work.memory_tb
 # 2 compiles, 0 failed with no errors.
 vsim work.memory_tb
 # vsim work.memory_tb 
-# Start time: 22:03:25 on Apr 01,2021
+# Start time: 18:22:33 on Apr 04,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.memory_tb(tb)
 # Loading work.memory(rtl)
-# Break key hit
-vsim work.memory_tb
-# End time: 22:03:55 on Apr 01,2021, Elapsed time: 0:00:30
-# Errors: 0, Warnings: 4
-# vsim work.memory_tb 
-# Start time: 22:03:55 on Apr 01,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.memory_tb(tb)
-# Loading work.memory(rtl)
-# Compile of memory_tb.vhd failed with 1 errors.
-# Compile of memory.vhd was successful.
-# 2 compiles, 1 failed with 1 error.
-# Compile of memory_tb.vhd failed with 1 errors.
-# Compile of memory.vhd was successful.
-# 2 compiles, 1 failed with 1 error.
-# Compile of memory_tb.vhd failed with 1 errors.
-# Compile of memory.vhd was successful.
-# 2 compiles, 1 failed with 1 error.
-# Compile of memory_tb.vhd was successful.
-# Compile of memory.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.memory_tb
-# End time: 22:07:52 on Apr 01,2021, Elapsed time: 0:03:57
-# Errors: 0, Warnings: 5
-# vsim work.memory_tb 
-# Start time: 22:07:52 on Apr 01,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.memory_tb(tb)
-# Loading work.memory(rtl)
-add wave -position end  sim:/memory_tb/data_out_tb
-add wave -position end  sim:/memory_tb/address_tb
+# ** Warning: (vsim-3473) Component instance "my_memory_fsm : memory_state_machine" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /memory_tb File: /home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_tb.vhd
+add wave -position end  sim:/memory_tb/Ack_tb
+add wave -position end  sim:/memory_tb/reset_tb
+add wave -position end  sim:/memory_tb/dado_ptr_tb
+add wave -position end  sim:/memory_tb/ReqLeit_tb
+add wave -position end  sim:/memory_tb/read_address_tb
+add wave -position end  sim:/memory_tb/out_data_tb
 add wave -position end  sim:/memory_tb/clk_tb
+add wave -position end  sim:/memory_tb/address_tb
+add wave -position end  sim:/memory_tb/data_out_tb
 run
 # ** Note: Sinais injetados
 #    Time: 0 ps  Iteration: 0  Instance: /memory_tb
@@ -90,33 +37,40 @@ run
 run
 run
 run
+# Compile of memory_tb.vhd failed with 1 errors.
+# Compile of memory.vhd was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of memory_tb.vhd failed with 1 errors.
+# Compile of memory.vhd was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of memory_tb.vhd was successful.
+# Compile of memory.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.memory_tb
+# End time: 18:28:14 on Apr 04,2021, Elapsed time: 0:05:41
+# Errors: 0, Warnings: 8
+# vsim work.memory_tb 
+# Start time: 18:28:14 on Apr 04,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_tb(tb)
+# Loading work.memory(rtl)
+# ** Warning: (vsim-3473) Component instance "my_memory_fsm : memory_state_machine" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /memory_tb File: /home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_tb.vhd
+add wave -position end  sim:/memory_tb/Ack_tb
+add wave -position end  sim:/memory_tb/reset_tb
+add wave -position end  sim:/memory_tb/dado_ptr_tb
+add wave -position end  sim:/memory_tb/ReqLeit_tb
+add wave -position end  sim:/memory_tb/read_address_tb
+add wave -position end  sim:/memory_tb/out_data_tb
+add wave -position end  sim:/memory_tb/clk_tb
+add wave -position end  sim:/memory_tb/address_tb
+add wave -position end  sim:/memory_tb/data_out_tb
 run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
+# ** Note: Sinais injetados
+#    Time: 10 ps  Iteration: 0  Instance: /memory_tb
 run
 run
 run
@@ -146,22 +100,161 @@ run
 # Compile of memory.vhd was successful.
 # 2 compiles, 0 failed with no errors.
 vsim work.memory_tb
-# End time: 22:10:47 on Apr 01,2021, Elapsed time: 0:02:55
+# End time: 18:29:43 on Apr 04,2021, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 3
+# vsim work.memory_tb 
+# Start time: 18:29:43 on Apr 04,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_tb(tb)
+# Loading work.memory(rtl)
+# ** Warning: (vsim-3473) Component instance "my_memory_fsm : memory_state_machine" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /memory_tb File: /home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_tb.vhd
+add wave -position end  sim:/memory_tb/Ack_tb
+add wave -position end  sim:/memory_tb/reset_tb
+add wave -position end  sim:/memory_tb/dado_ptr_tb
+add wave -position end  sim:/memory_tb/ReqLeit_tb
+add wave -position end  sim:/memory_tb/read_address_tb
+add wave -position end  sim:/memory_tb/out_data_tb
+add wave -position end  sim:/memory_tb/clk_tb
+add wave -position end  sim:/memory_tb/address_tb
+add wave -position end  sim:/memory_tb/data_out_tb
+run
+run
+run
+run
+run
+run
+run
+# Compile of memory_tb.vhd was successful.
+# Compile of memory.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.memory_tb
+# End time: 18:30:35 on Apr 04,2021, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 3
+# vsim work.memory_tb 
+# Start time: 18:30:35 on Apr 04,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_tb(tb)
+# Loading work.memory(rtl)
+# ** Warning: (vsim-3473) Component instance "my_memory_fsm : memory_state_machine" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /memory_tb File: /home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_tb.vhd
+add wave -position end  sim:/memory_tb/Ack_tb
+add wave -position end  sim:/memory_tb/reset_tb
+add wave -position end  sim:/memory_tb/dado_ptr_tb
+add wave -position end  sim:/memory_tb/ReqLeit_tb
+add wave -position end  sim:/memory_tb/read_address_tb
+add wave -position end  sim:/memory_tb/out_data_tb
+add wave -position end  sim:/memory_tb/clk_tb
+add wave -position end  sim:/memory_tb/address_tb
+add wave -position end  sim:/memory_tb/data_out_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: Sinais injetados
+#    Time: 1 ns  Iteration: 0  Instance: /memory_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of memory_tb.vhd was successful.
+# Compile of memory.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.memory_tb
+# End time: 18:46:56 on Apr 04,2021, Elapsed time: 0:16:21
+# Errors: 0, Warnings: 3
+# vsim work.memory_tb 
+# Start time: 18:46:56 on Apr 04,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_tb(tb)
+# Loading work.memory(rtl)
+# ** Warning: (vsim-3473) Component instance "my_memory_fsm : memory_state_machine" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /memory_tb File: /home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_tb.vhd
+vsim work.memory_tb
+# End time: 18:47:03 on Apr 04,2021, Elapsed time: 0:00:07
 # Errors: 0, Warnings: 2
 # vsim work.memory_tb 
-# Start time: 22:10:47 on Apr 01,2021
+# Start time: 18:47:03 on Apr 04,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.memory_tb(tb)
 # Loading work.memory(rtl)
-add wave -position end  sim:/memory_tb/data_out_tb
-add wave -position end  sim:/memory_tb/address_tb
+# ** Warning: (vsim-3473) Component instance "my_memory_fsm : memory_state_machine" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /memory_tb File: /home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_tb.vhd
+add wave -position end  sim:/memory_tb/Ack_tb
+add wave -position end  sim:/memory_tb/dado_ptr_tb
+add wave -position end  sim:/memory_tb/ReqLeit_tb
+add wave -position end  sim:/memory_tb/read_address_tb
+add wave -position end  sim:/memory_tb/out_data_tb
 add wave -position end  sim:/memory_tb/clk_tb
+add wave -position end  sim:/memory_tb/address_tb
+add wave -position end  sim:/memory_tb/data_out_tb
+add wave -position end  sim:/memory_tb/reset_tb
 run
 # ** Note: Sinais injetados
 #    Time: 0 ps  Iteration: 0  Instance: /memory_tb
 run
-# End time: 23:00:10 on Apr 01,2021, Elapsed time: 0:49:23
-# Errors: 0, Warnings: 1
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3473) Component instance "my_memory_fsm : memory_state_machine" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /memory_tb File: /home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_tb.vhd
+step
+step
+step
+step
+step
+step
+step
+# ** Note: Sinais injetados
+#    Time: 0 ps  Iteration: 0  Instance: /memory_tb
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 50 ps.
+step
+step
+step
+step
+step
+# Next activity is in 50 ps.
+step
+step
+step
+step
+step
+# Next activity is in 10 ps.
+step
+# Next activity is in 40 ps.
+step
+# End time: 23:29:24 on Apr 04,2021, Elapsed time: 4:42:21
+# Errors: 0, Warnings: 2

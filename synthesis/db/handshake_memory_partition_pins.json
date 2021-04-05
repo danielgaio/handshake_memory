@@ -28,6 +28,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "read_address",
+					"strict" : false
+				},
+				{
+					"name" : "out_data",
+					"strict" : false
+				},
+				{
 					"name" : "address[1]",
 					"strict" : false
 				},
