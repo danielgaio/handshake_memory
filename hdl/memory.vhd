@@ -52,19 +52,16 @@ architecture rtl of memory is
 
 begin
 
-	process(clk) begin
+	process(clk, read_address, address, out_data) begin
 		if(rising_edge(clk) and read_address = '1') then
-			--if(we = '1') then
-				--ram(addr) <= data;
-			--end if;
-
 			-- Register the address for reading
+			address_reg <= address;
 			if(out_data = '1') then
-				address_reg <= address;
+				data_out <= ram(address_reg);
 			end if;
 		end if;
 	end process;
 
-	data_out <= ram(address_reg);
+	--data_out <= ram(address_reg);
 
 end rtl;

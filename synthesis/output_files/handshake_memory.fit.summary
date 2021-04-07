@@ -1,15 +1,15 @@
-Fitter Status : Successful - Thu Apr  1 21:42:24 2021
+Fitter Status : Successful - Tue Apr  6 21:40:34 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : handshake_memory
-Top-level Entity Name : memory
+Top-level Entity Name : top
 Family : Cyclone IV E
 Device : EP4CE6E22C6
 Timing Models : Final
-Total logic elements : 4 / 6,272 ( < 1 % )
-    Total combinational functions : 0 / 6,272 ( 0 % )
-    Dedicated logic registers : 4 / 6,272 ( < 1 % )
-Total registers : 4
-Total pins : 13 / 92 ( 14 % )
+Total logic elements : 14 / 6,272 ( < 1 % )
+    Total combinational functions : 9 / 6,272 ( < 1 % )
+    Dedicated logic registers : 8 / 6,272 ( < 1 % )
+Total registers : 12
+Total pins : 18 / 92 ( 20 % )
 Total virtual pins : 0
 Total memory bits : 0 / 276,480 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )

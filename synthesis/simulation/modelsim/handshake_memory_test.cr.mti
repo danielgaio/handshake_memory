@@ -1,4 +1,12 @@
-/home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd
+/home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity memory_state_machine
+-- Compiling architecture rtl of memory_state_machine
+
+} {} {}} /home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -7,7 +15,25 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity memory
 -- Compiling architecture rtl of memory
 
-} {} {}} /home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_tb.vhd
+} {} {}} /home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_state_machine_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_state_machine_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity memory_state_machine_tb
+-- Compiling architecture bench of memory_state_machine_tb
+
+} {} {}} /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity top
+-- Compiling architecture rtl of top
+
+} {} {}} /home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd {0 {vcom -work work -2002 -explicit -stats=none /home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -15,5 +41,10 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity memory_tb
 -- Compiling architecture tb of memory_tb
+** Error: /home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd(71): (vcom-1582) Illegal qualified expression 'std.STANDARD.INTEGER'.
+ The type of the operand must match type 'std.STANDARD.INTEGER'.
+** Error: /home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd(71): Qualified expression type mark std.STANDARD.INTEGER is not type std.STANDARD.STRING.
+** Error: /home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd(71): Signal "data_out_tb" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type std.STANDARD.INTEGER.
+** Note: /home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd(90): VHDL Compiler exiting
 
-} {} {}}
+} {9.0 10.0 11.0 13.0} {}}

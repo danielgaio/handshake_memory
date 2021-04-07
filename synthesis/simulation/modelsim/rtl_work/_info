@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 d/home/daniel/Documents/GitHub/handshake_memory/synthesis/simulation/modelsim
 Ememory
-Z1 w1617564471
+Z1 w1617751139
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
@@ -24,14 +24,14 @@ V1F8RP9mMoO27WVHm[l?6I3
 !s100 hNU>7cHYYVVN<PR=cge>21
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1617571199
+Z8 !s110 1617756060
 !i10b 1
-Z9 !s108 1617571199.000000
+Z9 !s108 1617756060.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|/home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd|
-!s107 /home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd|
+Z11 !s107 /home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd|
 !i113 1
-Z11 o-93 -work work
-Z12 tExplicit 1 CvgOpt 0
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
 Artl
 R2
 R3
@@ -39,16 +39,100 @@ R4
 DEx4 work 6 memory 0 22 1F8RP9mMoO27WVHm[l?6I3
 !i122 0
 l53
-L25 46
-V5M<LDaXGGE?5dDlUSZU771
-!s100 8Pb?5?_BJB@cY8L=>?GCV3
+L25 43
+VIH@GfFmNPi7^17MeE[A;U0
+!s100 4MP@BAjfGS6XXY8l;=5`Z1
 R7
 31
 R8
 !i10b 1
 R9
 R10
-Z13 !s107 /home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd|
-!i113 1
 R11
+!i113 1
 R12
+R13
+Ememory_state_machine
+Z14 w1617751000
+R3
+R4
+!i122 1
+R0
+Z15 8/home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd
+Z16 F/home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd
+l0
+L4 1
+V<lCPSobfoD?>4e6Mh2hgh0
+!s100 S^BNIGQ`3>BSh>fl9O<1n1
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd|
+Z18 !s107 /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd|
+!i113 1
+R12
+R13
+Artl
+R3
+R4
+DEx4 work 20 memory_state_machine 0 22 <lCPSobfoD?>4e6Mh2hgh0
+!i122 1
+l25
+L17 63
+Vl`=_7HL`dJV6Mo>Rm2<fW3
+!s100 ::5eVk[<^GEG2XSYfG[]F0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Etop
+Z19 w1617755490
+R2
+R3
+R4
+!i122 2
+R0
+Z20 8/home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd
+Z21 F/home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd
+l0
+L5 1
+VHo_D2[oLdz;e1S[4zJ2zR1
+!s100 ID<ROc=_J8HY4SKe0Bhjm1
+R7
+31
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-93|-work|work|/home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd|
+!s107 /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 3 top 0 22 Ho_D2[oLdz;e1S[4zJ2zR1
+!i122 2
+l51
+L21 52
+VBW53Skf0>2MBdzz4XGYR@0
+!s100 Olf`VW3JHhRdFNH7DmTmm0
+R7
+31
+R8
+!i10b 1
+R9
+R22
+Z23 !s107 /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd|
+!i113 1
+R12
+R13

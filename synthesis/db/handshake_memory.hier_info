@@ -1,27 +1,83 @@
-|memory
+|top
+clk_t => memory:my_memory.clk
+clk_t => memory_state_machine:my_memory_fsm.clk
+address_t[0] => memory:my_memory.address[0]
+address_t[1] => memory:my_memory.address[1]
+address_t[2] => memory:my_memory.address[2]
+address_t[3] => memory:my_memory.address[3]
+data_out_t[0] << memory:my_memory.data_out[0]
+data_out_t[1] << memory:my_memory.data_out[1]
+data_out_t[2] << memory:my_memory.data_out[2]
+data_out_t[3] << memory:my_memory.data_out[3]
+data_out_t[4] << memory:my_memory.data_out[4]
+data_out_t[5] << memory:my_memory.data_out[5]
+data_out_t[6] << memory:my_memory.data_out[6]
+data_out_t[7] << memory:my_memory.data_out[7]
+ReqLeit_t => memory_state_machine:my_memory_fsm.ReqLeit
+Ack_t_in_sm => memory_state_machine:my_memory_fsm.Ack_in_sm
+Ack_t_out_sm << memory_state_machine:my_memory_fsm.Ack_out_sm
+dado_ptr_t << memory_state_machine:my_memory_fsm.dado_ptr
+reset_t => memory_state_machine:my_memory_fsm.reset
+
+
+|top|memory:my_memory
+clk => data_out[0]~reg0.CLK
+clk => data_out[1]~reg0.CLK
+clk => data_out[2]~reg0.CLK
+clk => data_out[3]~reg0.CLK
+clk => data_out[4]~reg0.CLK
+clk => data_out[5]~reg0.CLK
+clk => data_out[6]~reg0.CLK
+clk => data_out[7]~reg0.CLK
 clk => address_reg[0].CLK
 clk => address_reg[1].CLK
 clk => address_reg[2].CLK
 clk => address_reg[3].CLK
-address[0] => address_reg.DATAB
-address[1] => address_reg.DATAB
-address[2] => address_reg.DATAB
-address[3] => address_reg.DATAB
+address[0] => address_reg[0].DATAIN
+address[1] => address_reg[1].DATAIN
+address[2] => address_reg[2].DATAIN
+address[3] => address_reg[3].DATAIN
+read_address => data_out[0]~reg0.ENA
+read_address => data_out[1]~reg0.ENA
+read_address => data_out[2]~reg0.ENA
+read_address => data_out[3]~reg0.ENA
+read_address => data_out[4]~reg0.ENA
+read_address => data_out[5]~reg0.ENA
+read_address => data_out[6]~reg0.ENA
+read_address => data_out[7]~reg0.ENA
 read_address => address_reg[0].ENA
 read_address => address_reg[1].ENA
 read_address => address_reg[2].ENA
 read_address => address_reg[3].ENA
-out_data => address_reg.OUTPUTSELECT
-out_data => address_reg.OUTPUTSELECT
-out_data => address_reg.OUTPUTSELECT
-out_data => address_reg.OUTPUTSELECT
-data_out[0] << ram.DATAOUT
-data_out[1] << ram.DATAOUT1
-data_out[2] << ram.DATAOUT2
-data_out[3] << ram.DATAOUT3
-data_out[4] << ram.DATAOUT4
-data_out[5] << ram.DATAOUT5
-data_out[6] << ram.DATAOUT6
-data_out[7] << ram.DATAOUT7
+out_data => data_out.OUTPUTSELECT
+out_data => data_out.OUTPUTSELECT
+out_data => data_out.OUTPUTSELECT
+out_data => data_out.OUTPUTSELECT
+out_data => data_out.OUTPUTSELECT
+out_data => data_out.OUTPUTSELECT
+out_data => data_out.OUTPUTSELECT
+out_data => data_out.OUTPUTSELECT
+data_out[0] <= data_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|memory_state_machine:my_memory_fsm
+clk => state~3.DATAIN
+ReqLeit => state.DATAB
+ReqLeit => Selector1.IN2
+ReqLeit => Selector2.IN1
+Ack_in_sm => state.DATAB
+Ack_in_sm => Selector2.IN2
+Ack_out_sm <= Ack_out_sm$latch.DB_MAX_OUTPUT_PORT_TYPE
+dado_ptr <= dado_ptr$latch.DB_MAX_OUTPUT_PORT_TYPE
+reset => state~5.DATAIN
+read_address <= read_address$latch.DB_MAX_OUTPUT_PORT_TYPE
+out_data <= out_data$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 

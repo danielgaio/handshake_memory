@@ -1,5 +1,5 @@
 Analysis & Synthesis report for handshake_memory
-Sun Apr  4 19:32:39 2021
+Tue Apr  6 21:40:29 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,7 +10,18 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |top|memory_state_machine:my_memory_fsm|state
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |top
+ 13. Parameter Settings for User Entity Instance: memory:my_memory
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -37,20 +48,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sun Apr  4 19:32:39 2021           ;
+; Analysis & Synthesis Status        ; Successful - Tue Apr  6 21:40:29 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; handshake_memory                            ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 17                                          ;
+;     Total combinational functions  ; 9                                           ;
+;     Dedicated logic registers      ; 12                                          ;
+; Total registers                    ; 12                                          ;
+; Total pins                         ; 18                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -148,11 +159,170 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+; ../hdl/memory.vhd                ; yes             ; User VHDL File  ; /home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd               ;         ;
+; ../hdl/memory_state_machine.vhd  ; yes             ; User VHDL File  ; /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd ;         ;
+; ../hdl/top.vhd                   ; yes             ; User VHDL File  ; /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd                  ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 17          ;
+;                                             ;             ;
+; Total combinational functions               ; 9           ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 1           ;
+;     -- 3 input functions                    ; 5           ;
+;     -- <=2 input functions                  ; 3           ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 9           ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 12          ;
+;     -- Dedicated logic registers            ; 12          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 18          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clk_t~input ;
+; Maximum fan-out                             ; 12          ;
+; Total fan-out                               ; 85          ;
+; Average fan-out                             ; 1.49        ;
++---------------------------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                     ; Entity Name          ; Library Name ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+----------------------+--------------+
+; |top                                    ; 9 (0)               ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |top                                    ; top                  ; work         ;
+;    |memory:my_memory|                   ; 1 (1)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|memory:my_memory                   ; memory               ; work         ;
+;    |memory_state_machine:my_memory_fsm| ; 8 (8)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|memory_state_machine:my_memory_fsm ; memory_state_machine ; work         ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------+
+; State Machine - |top|memory_state_machine:my_memory_fsm|state ;
++----------+----------+----------+----------+-------------------+
+; Name     ; state.s3 ; state.s2 ; state.s1 ; state.s0          ;
++----------+----------+----------+----------+-------------------+
+; state.s0 ; 0        ; 0        ; 0        ; 0                 ;
+; state.s1 ; 0        ; 0        ; 1        ; 1                 ;
+; state.s2 ; 0        ; 1        ; 0        ; 1                 ;
+; state.s3 ; 1        ; 0        ; 0        ; 1                 ;
++----------+----------+----------+----------+-------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                           ;
++----------------------------------------------------+-------------------------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal                             ; Free of Timing Hazards ;
++----------------------------------------------------+-------------------------------------------------+------------------------+
+; memory_state_machine:my_memory_fsm|Ack_out_sm      ; memory_state_machine:my_memory_fsm|state.s3     ; yes                    ;
+; memory_state_machine:my_memory_fsm|dado_ptr        ; memory_state_machine:my_memory_fsm|state.s1     ; yes                    ;
+; memory_state_machine:my_memory_fsm|read_address    ; memory_state_machine:my_memory_fsm|read_address ; yes                    ;
+; memory_state_machine:my_memory_fsm|out_data        ; memory_state_machine:my_memory_fsm|state.s1     ; yes                    ;
+; Number of user-specified and inferred latches = 4  ;                                                 ;                        ;
++----------------------------------------------------+-------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; memory:my_memory|data_out[4..7]       ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 4 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 12    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |top ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memory:my_memory ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                       ;
+; ADDR_WIDTH     ; 4     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 18                          ;
+; cycloneiii_ff         ; 12                          ;
+;     CLR               ; 4                           ;
+;     ENA               ; 8                           ;
+; cycloneiii_lcell_comb ; 10                          ;
+;     normal            ; 10                          ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 5                           ;
+;         4 data inputs ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 0.67                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -161,7 +331,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Apr  4 19:32:32 2021
+    Info: Processing started: Tue Apr  6 21:40:20 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off handshake_memory -c handshake_memory
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -172,21 +342,45 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/d
     Info (12022): Found design unit 1: mmu-rtl File: /home/daniel/Documents/GitHub/handshake_memory/hdl/mmu.vhd Line: 27
     Info (12023): Found entity 1: mmu File: /home/daniel/Documents/GitHub/handshake_memory/hdl/mmu.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd
-    Info (12022): Found design unit 1: memory_state_machine-rtl File: /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd Line: 18
+    Info (12022): Found design unit 1: memory_state_machine-rtl File: /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd Line: 17
     Info (12023): Found entity 1: memory_state_machine File: /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /home/daniel/Documents/GitHub/handshake_memory/hdl/mmu_state_machine.vhd
     Info (12022): Found design unit 1: four_state_mealy_state_machine-rtl File: /home/daniel/Documents/GitHub/handshake_memory/hdl/mmu_state_machine.vhd Line: 18
     Info (12023): Found entity 1: four_state_mealy_state_machine File: /home/daniel/Documents/GitHub/handshake_memory/hdl/mmu_state_machine.vhd Line: 4
-Error (10500): VHDL syntax error at top.vhd(19) near text ":";  expecting ";", or ")" File: /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd Line: 19
-Error (10500): VHDL syntax error at top.vhd(72) near text "port";  expecting "(", or "'", or "." File: /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd Line: 72
-Error (10500): VHDL syntax error at top.vhd(78) near text ";";  expecting ":=", or "<=" File: /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd Line: 78
-Error (10500): VHDL syntax error at top.vhd(80) near text "port";  expecting "(", or "'", or "." File: /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd Line: 80
-Error (10500): VHDL syntax error at top.vhd(88) near text ";";  expecting ":=", or "<=" File: /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd Line: 88
-Info (12021): Found 0 design units, including 0 entities, in source file /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 5 errors, 1 warning
-    Error: Peak virtual memory: 629 megabytes
-    Error: Processing ended: Sun Apr  4 19:32:39 2021
-    Error: Elapsed time: 00:00:07
-    Error: Total CPU time (on all processors): 00:00:21
+Info (12021): Found 2 design units, including 1 entities, in source file /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd
+    Info (12022): Found design unit 1: top-rtl File: /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd Line: 21
+    Info (12023): Found entity 1: top File: /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd Line: 5
+Info (12127): Elaborating entity "top" for the top level hierarchy
+Info (12128): Elaborating entity "memory" for hierarchy "memory:my_memory" File: /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd Line: 53
+Info (12128): Elaborating entity "memory_state_machine" for hierarchy "memory_state_machine:my_memory_fsm" File: /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at memory_state_machine.vhd(57): inferring latch(es) for signal or variable "Ack_out_sm", which holds its previous value in one or more paths through the process File: /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at memory_state_machine.vhd(57): inferring latch(es) for signal or variable "read_address", which holds its previous value in one or more paths through the process File: /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at memory_state_machine.vhd(57): inferring latch(es) for signal or variable "dado_ptr", which holds its previous value in one or more paths through the process File: /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at memory_state_machine.vhd(57): inferring latch(es) for signal or variable "out_data", which holds its previous value in one or more paths through the process File: /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd Line: 57
+Info (10041): Inferred latch for "out_data" at memory_state_machine.vhd(57) File: /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd Line: 57
+Info (10041): Inferred latch for "dado_ptr" at memory_state_machine.vhd(57) File: /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd Line: 57
+Info (10041): Inferred latch for "read_address" at memory_state_machine.vhd(57) File: /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd Line: 57
+Info (10041): Inferred latch for "Ack_out_sm" at memory_state_machine.vhd(57) File: /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd Line: 57
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276004): RAM logic "memory:my_memory|ram" is uninferred due to inappropriate RAM size File: /home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd Line: 47
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "memory_state_machine:my_memory_fsm|out_data" merged with LATCH primitive "memory_state_machine:my_memory_fsm|dado_ptr" File: /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd Line: 13
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "data_out_t[4]" is stuck at GND File: /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd Line: 12
+    Warning (13410): Pin "data_out_t[5]" is stuck at GND File: /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd Line: 12
+    Warning (13410): Pin "data_out_t[6]" is stuck at GND File: /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd Line: 12
+    Warning (13410): Pin "data_out_t[7]" is stuck at GND File: /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd Line: 12
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 35 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 10 output pins
+    Info (21061): Implemented 17 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 637 megabytes
+    Info: Processing ended: Tue Apr  6 21:40:29 2021
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:25
 
 

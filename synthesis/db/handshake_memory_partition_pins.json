@@ -4,47 +4,59 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "data_out[0]",
+					"name" : "data_out_t[0]",
 					"strict" : false
 				},
 				{
-					"name" : "data_out[1]",
+					"name" : "data_out_t[1]",
 					"strict" : false
 				},
 				{
-					"name" : "data_out[2]",
+					"name" : "data_out_t[2]",
 					"strict" : false
 				},
 				{
-					"name" : "data_out[3]",
+					"name" : "data_out_t[3]",
 					"strict" : false
 				},
 				{
-					"name" : "address[0]",
+					"name" : "Ack_t_out_sm",
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "dado_ptr_t",
 					"strict" : false
 				},
 				{
-					"name" : "read_address",
+					"name" : "clk_t",
 					"strict" : false
 				},
 				{
-					"name" : "out_data",
+					"name" : "address_t[0]",
 					"strict" : false
 				},
 				{
-					"name" : "address[1]",
+					"name" : "address_t[1]",
 					"strict" : false
 				},
 				{
-					"name" : "address[2]",
+					"name" : "address_t[2]",
 					"strict" : false
 				},
 				{
-					"name" : "address[3]",
+					"name" : "address_t[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ReqLeit_t",
+					"strict" : false
+				},
+				{
+					"name" : "reset_t",
+					"strict" : false
+				},
+				{
+					"name" : "Ack_t_in_sm",
 					"strict" : false
 				}
 			]
