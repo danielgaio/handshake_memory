@@ -1,9 +1,0 @@
-# Current time Tue Apr  6 14:05:24 2021
-# ModelSim - Intel FPGA Edition Stack Trace
-# Program = vish
-# Id = "2020.1"
-# Version = "2020.02"
-# Date = "Feb 28 2020"
-# Platform = "linuxaloem"
-# 0    0xf7fce559: '<unknown (@0xf7fce559)>'
-# 1    0x0000fffc: '<unknown (@0xfffc)>'

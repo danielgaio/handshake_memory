@@ -2,94 +2,11 @@
 # Compile of memory_state_machine.vhd was successful.
 # Compile of top.vhd was successful.
 # Compile of memory_state_machine_tb.vhd was successful.
-# Compile of top_tb.vhd was successful with warnings.
-# 5 compiles, 0 failed with no errors.
-vsim work.memory_tb
-# vsim work.memory_tb 
-# Start time: 21:41:33 on Apr 06,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.memory_tb(tb)
-# Loading work.top(rtl)
-# ** Error: (vsim-3733) No default binding for component instance 'my_top'.
-#    The following component generic is not on the entity:
-#           DATA_WIDTH_T
-#    Time: 0 ps  Iteration: 0  Instance: /memory_tb/my_top File: /home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd Line: 48
-# Loading work.memory(rtl)
-# Loading work.memory_state_machine(rtl)
-# Error loading design
-# End time: 21:41:33 on Apr 06,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 2
-# Compile of memory.vhd was successful.
-# Compile of memory_state_machine.vhd was successful.
-# Compile of top.vhd was successful.
-# Compile of memory_state_machine_tb.vhd was successful.
 # Compile of top_tb.vhd was successful.
 # 5 compiles, 0 failed with no errors.
 vsim work.memory_tb
 # vsim work.memory_tb 
-# Start time: 21:47:52 on Apr 06,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.memory_tb(tb)
-# Loading work.top(rtl)
-# ** Error: (vsim-3733) No default binding for component instance 'my_top'.
-#    The following component generic is not on the entity:
-#           DATA_WIDTH_T
-#    Time: 0 ps  Iteration: 0  Instance: /memory_tb/my_top File: /home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd Line: 48
-# Loading work.memory(rtl)
-# Loading work.memory_state_machine(rtl)
-# Error loading design
-# End time: 21:47:53 on Apr 06,2021, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 2
-# Compile of memory.vhd was successful.
-# Compile of memory_state_machine.vhd was successful.
-# Compile of top.vhd was successful.
-# Compile of memory_state_machine_tb.vhd was successful.
-# Compile of top_tb.vhd was successful.
-# 5 compiles, 0 failed with no errors.
-vsim work.memory_tb
-# vsim work.memory_tb 
-# Start time: 21:56:03 on Apr 06,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.memory_tb(tb)
-# Loading work.top(rtl)
-# Loading work.memory(rtl)
-# Loading work.memory_state_machine(rtl)
-add wave -position end  sim:/memory_tb/Ack_tb_in_sm
-add wave -position end  sim:/memory_tb/Ack_tb_out_sm
-add wave -position end  sim:/memory_tb/dado_ptr_tb
-add wave -position end  sim:/memory_tb/ReqLeit_tb
-add wave -position end  sim:/memory_tb/clk_tb
-add wave -position end  sim:/memory_tb/address_tb
-add wave -position end  sim:/memory_tb/data_out_tb
-add wave -position end  sim:/memory_tb/reset_tb
-run
-run
-# Compile of memory.vhd was successful.
-# Compile of memory_state_machine.vhd was successful.
-# Compile of top.vhd was successful.
-# Compile of memory_state_machine_tb.vhd was successful.
-# Compile of top_tb.vhd failed with 3 errors.
-# 5 compiles, 1 failed with 3 errors.
-# Compile of memory.vhd was successful.
-# Compile of memory_state_machine.vhd was successful.
-# Compile of top.vhd was successful.
-# Compile of memory_state_machine_tb.vhd was successful.
-# Compile of top_tb.vhd was successful.
-# 5 compiles, 0 failed with no errors.
-vsim work.memory_tb
-# End time: 22:09:19 on Apr 06,2021, Elapsed time: 0:13:16
-# Errors: 0, Warnings: 4
-# vsim work.memory_tb 
-# Start time: 22:09:19 on Apr 06,2021
+# Start time: 11:28:12 on Apr 07,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -109,12 +26,26 @@ add wave -position end  sim:/memory_tb/reset_tb
 add wave -position end  sim:/memory_tb/stop_the_clock
 add wave -position end  sim:/memory_tb/clock_period
 run
-# Compile of memory.vhd was successful.
-# Compile of memory_state_machine.vhd was successful.
-# Compile of top.vhd was successful.
-# Compile of memory_state_machine_tb.vhd was successful.
-# Compile of top_tb.vhd failed with 14 errors.
-# 5 compiles, 1 failed with 14 errors.
+# ** Note: aqui eh setado o endereco a ser lido
+#    Time: 10 ns  Iteration: 0  Instance: /memory_tb
+# ** Note: aqui eh feita a leitura do dado solicitado
+#    Time: 25 ns  Iteration: 2  Instance: /memory_tb
+# ** Note: Memory output: 00000011
+#    Time: 40 ns  Iteration: 0  Instance: /memory_tb
+# ** Note: memoria zerou dado ptr
+#    Time: 45 ns  Iteration: 2  Instance: /memory_tb
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 # Compile of memory.vhd was successful.
 # Compile of memory_state_machine.vhd was successful.
 # Compile of top.vhd was successful.
@@ -122,10 +53,10 @@ run
 # Compile of top_tb.vhd was successful.
 # 5 compiles, 0 failed with no errors.
 vsim work.memory_tb
-# End time: 22:33:55 on Apr 06,2021, Elapsed time: 0:24:36
+# End time: 11:30:24 on Apr 07,2021, Elapsed time: 0:02:12
 # Errors: 0, Warnings: 3
 # vsim work.memory_tb 
-# Start time: 22:33:55 on Apr 06,2021
+# Start time: 11:30:24 on Apr 07,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -147,65 +78,11 @@ add wave -position end  sim:/memory_tb/clock_period
 run
 # ** Note: aqui eh setado o endereco a ser lido
 #    Time: 10 ns  Iteration: 0  Instance: /memory_tb
-run
 # ** Note: aqui eh feita a leitura do dado solicitado
 #    Time: 25 ns  Iteration: 2  Instance: /memory_tb
+# ** Note: Memory output: 00000011
+#    Time: 40 ns  Iteration: 0  Instance: /memory_tb
 # ** Note: memoria zerou dado ptr
-#    Time: 35 ns  Iteration: 2  Instance: /memory_tb
-# Compile of memory.vhd was successful.
-# Compile of memory_state_machine.vhd was successful.
-# Compile of top.vhd was successful.
-# Compile of memory_state_machine_tb.vhd was successful.
-# Compile of top_tb.vhd was successful.
-# 5 compiles, 0 failed with no errors.
-vsim work.memory_tb
-# End time: 22:36:28 on Apr 06,2021, Elapsed time: 0:02:33
-# Errors: 0, Warnings: 2
-# vsim work.memory_tb 
-# Start time: 22:36:28 on Apr 06,2021
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.memory_tb(tb)
-# Loading work.top(rtl)
-# Loading work.memory(rtl)
-# Loading work.memory_state_machine(rtl)
-add wave -position end  sim:/memory_tb/Ack_tb_in_sm
-add wave -position end  sim:/memory_tb/Ack_tb_out_sm
-add wave -position end  sim:/memory_tb/dado_ptr_tb
-add wave -position end  sim:/memory_tb/ReqLeit_tb
-add wave -position end  sim:/memory_tb/clk_tb
-add wave -position end  sim:/memory_tb/address_tb
-add wave -position end  sim:/memory_tb/data_out_tb
-add wave -position end  sim:/memory_tb/reset_tb
-add wave -position end  sim:/memory_tb/stop_the_clock
-add wave -position end  sim:/memory_tb/clock_period
-run
-# ** Note: aqui eh setado o endereco a ser lido
-#    Time: 10 ns  Iteration: 0  Instance: /memory_tb
-run
-# ** Note: aqui eh feita a leitura do dado solicitado
-#    Time: 25 ns  Iteration: 2  Instance: /memory_tb
-# ** Note: memoria zerou dado ptr
-#    Time: 35 ns  Iteration: 2  Instance: /memory_tb
-# Compile of memory.vhd was successful.
-# Compile of memory_state_machine.vhd was successful.
-# Compile of top.vhd was successful.
-# Compile of memory_state_machine_tb.vhd was successful.
-# Compile of top_tb.vhd failed with 1 errors.
-# 5 compiles, 1 failed with 1 error.
-# Compile of memory.vhd was successful.
-# Compile of memory_state_machine.vhd was successful.
-# Compile of top.vhd was successful.
-# Compile of memory_state_machine_tb.vhd was successful.
-# Compile of top_tb.vhd failed with 1 errors.
-# 5 compiles, 1 failed with 1 error.
-# Compile of memory.vhd was successful.
-# Compile of memory_state_machine.vhd was successful.
-# Compile of top.vhd was successful.
-# Compile of memory_state_machine_tb.vhd was successful.
-# Compile of top_tb.vhd failed with 3 errors.
-# 5 compiles, 1 failed with 3 errors.
-# End time: 22:56:35 on Apr 06,2021, Elapsed time: 0:20:07
-# Errors: 0, Warnings: 4
+#    Time: 45 ns  Iteration: 2  Instance: /memory_tb
+# End time: 11:38:29 on Apr 07,2021, Elapsed time: 0:08:05
+# Errors: 0, Warnings: 1

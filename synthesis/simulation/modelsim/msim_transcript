@@ -11,7 +11,7 @@
 # 
 # vcom -93 -work work {/home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:41:00 on Apr 06,2021
+# Start time: 11:27:27 on Apr 07,2021
 # vcom -reportprogress 300 -93 -work work /home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -19,22 +19,22 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity memory
 # -- Compiling architecture rtl of memory
-# End time: 21:41:00 on Apr 06,2021, Elapsed time: 0:00:00
+# End time: 11:27:27 on Apr 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:41:00 on Apr 06,2021
+# Start time: 11:27:27 on Apr 07,2021
 # vcom -reportprogress 300 -93 -work work /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity memory_state_machine
 # -- Compiling architecture rtl of memory_state_machine
-# End time: 21:41:00 on Apr 06,2021, Elapsed time: 0:00:00
+# End time: 11:27:27 on Apr 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {/home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 21:41:00 on Apr 06,2021
+# Start time: 11:27:27 on Apr 07,2021
 # vcom -reportprogress 300 -93 -work work /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -42,9 +42,9 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity top
 # -- Compiling architecture rtl of top
-# End time: 21:41:00 on Apr 06,2021, Elapsed time: 0:00:00
+# End time: 11:27:27 on Apr 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # 
 # stdin: <EOF>
-# Loading project handshake_memory_test
+# Loading project handshake_memory_tb
