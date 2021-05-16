@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 d/home/daniel/Documents/GitHub/handshake_memory/synthesis/simulation/modelsim
 Ememory
-Z1 w1617751139
+Z1 w1619804948
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
@@ -24,9 +24,9 @@ V1F8RP9mMoO27WVHm[l?6I3
 !s100 hNU>7cHYYVVN<PR=cge>21
 Z7 OV;C;2020.1;71
 31
-Z8 !s110 1617805647
+Z8 !s110 1619805396
 !i10b 1
-Z9 !s108 1617805647.000000
+Z9 !s108 1619805396.000000
 Z10 !s90 -reportprogress|300|-93|-work|work|/home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd|
 Z11 !s107 /home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd|
 !i113 1
@@ -40,8 +40,8 @@ DEx4 work 6 memory 0 22 1F8RP9mMoO27WVHm[l?6I3
 !i122 0
 l53
 L25 43
-VIH@GfFmNPi7^17MeE[A;U0
-!s100 4MP@BAjfGS6XXY8l;=5`Z1
+VZe=M]]8<iR7HKP;S6k9H^1
+!s100 ?m@o_[I?5<]bQ3[SR`NGC2
 R7
 31
 R8
@@ -53,7 +53,7 @@ R11
 R12
 R13
 Ememory_state_machine
-Z14 w1617751000
+Z14 w1619805211
 R3
 R4
 !i122 1
@@ -80,9 +80,9 @@ R4
 DEx4 work 20 memory_state_machine 0 22 <lCPSobfoD?>4e6Mh2hgh0
 !i122 1
 l25
-L17 63
-Vl`=_7HL`dJV6Mo>Rm2<fW3
-!s100 ::5eVk[<^GEG2XSYfG[]F0
+L17 71
+V^H6523I8@A:fgdcXmRV7A0
+!s100 Io0MhLk<;>fcmdJY<d<RE0
 R7
 31
 R8

@@ -4,48 +4,43 @@
 # Compile of memory_state_machine_tb.vhd was successful.
 # Compile of top_tb.vhd was successful.
 # 5 compiles, 0 failed with no errors.
-vsim work.memory_tb
-# vsim work.memory_tb 
-# Start time: 11:28:12 on Apr 07,2021
+vsim work.memory
+# vsim work.memory 
+# Start time: 14:57:35 on Apr 30,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
-# Loading work.memory_tb(tb)
-# Loading work.top(rtl)
 # Loading work.memory(rtl)
+vsim work.memory_state_machine_tb
+# End time: 14:59:16 on Apr 30,2021, Elapsed time: 0:01:41
+# Errors: 0, Warnings: 2
+# vsim work.memory_state_machine_tb 
+# Start time: 14:59:16 on Apr 30,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_state_machine_tb(bench)
 # Loading work.memory_state_machine(rtl)
-add wave -position end  sim:/memory_tb/Ack_tb_in_sm
-add wave -position end  sim:/memory_tb/Ack_tb_out_sm
-add wave -position end  sim:/memory_tb/dado_ptr_tb
-add wave -position end  sim:/memory_tb/ReqLeit_tb
-add wave -position end  sim:/memory_tb/clk_tb
-add wave -position end  sim:/memory_tb/address_tb
-add wave -position end  sim:/memory_tb/data_out_tb
-add wave -position end  sim:/memory_tb/reset_tb
-add wave -position end  sim:/memory_tb/stop_the_clock
-add wave -position end  sim:/memory_tb/clock_period
+add wave -position end  sim:/memory_state_machine_tb/clk
+add wave -position end  sim:/memory_state_machine_tb/ReqLeit
+add wave -position end  sim:/memory_state_machine_tb/Ack_in_sm
+add wave -position end  sim:/memory_state_machine_tb/Ack_out_sm
+add wave -position end  sim:/memory_state_machine_tb/dado_ptr
+add wave -position end  sim:/memory_state_machine_tb/reset
+add wave -position end  sim:/memory_state_machine_tb/read_address
+add wave -position end  sim:/memory_state_machine_tb/out_data
+add wave -position end  sim:/memory_state_machine_tb/stop_the_clock
+add wave -position end  sim:/memory_state_machine_tb/clock_period
+# Can't move the Now cursor.
 run
 # ** Note: aqui eh setado o endereco a ser lido
-#    Time: 10 ns  Iteration: 0  Instance: /memory_tb
+#    Time: 10 ns  Iteration: 0  Instance: /memory_state_machine_tb
 # ** Note: aqui eh feita a leitura do dado solicitado
-#    Time: 25 ns  Iteration: 2  Instance: /memory_tb
-# ** Note: Memory output: 00000011
-#    Time: 40 ns  Iteration: 0  Instance: /memory_tb
+#    Time: 25 ns  Iteration: 2  Instance: /memory_state_machine_tb
 # ** Note: memoria zerou dado ptr
-#    Time: 45 ns  Iteration: 2  Instance: /memory_tb
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
+#    Time: 35 ns  Iteration: 2  Instance: /memory_state_machine_tb
 # Compile of memory.vhd was successful.
 # Compile of memory_state_machine.vhd was successful.
 # Compile of top.vhd was successful.
@@ -53,10 +48,936 @@ run
 # Compile of top_tb.vhd was successful.
 # 5 compiles, 0 failed with no errors.
 vsim work.memory_tb
-# End time: 11:30:24 on Apr 07,2021, Elapsed time: 0:02:12
-# Errors: 0, Warnings: 3
+# End time: 15:06:01 on Apr 30,2021, Elapsed time: 0:06:45
+# Errors: 0, Warnings: 2
 # vsim work.memory_tb 
-# Start time: 11:30:24 on Apr 07,2021
+# Start time: 15:06:01 on Apr 30,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_tb(tb)
+# Loading work.top(rtl)
+# Loading work.memory(rtl)
+# Loading work.memory_state_machine(rtl)
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# ** Note: aqui eh setado o endereco a ser lido
+#    Time: 10 ns  Iteration: 0  Instance: /memory_tb
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Compile of memory.vhd was successful.
+# Compile of memory_state_machine.vhd was successful.
+# Compile of top.vhd was successful.
+# Compile of memory_state_machine_tb.vhd was successful.
+# Compile of top_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim work.memory_tb
+# End time: 15:20:05 on Apr 30,2021, Elapsed time: 0:14:04
+# Errors: 0, Warnings: 2
+# vsim work.memory_tb 
+# Start time: 15:20:05 on Apr 30,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_tb(tb)
+# Loading work.top(rtl)
+# Loading work.memory(rtl)
+# Loading work.memory_state_machine(rtl)
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# ** Note: aqui eh setado o endereco a ser lido
+#    Time: 10 ns  Iteration: 0  Instance: /memory_tb
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# ** Note: aqui eh feita a leitura do dado solicitado
+#    Time: 25 ns  Iteration: 2  Instance: /memory_tb
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+# ** Note: Memory output: 00000011
+#    Time: 40 ns  Iteration: 0  Instance: /memory_tb
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# ** Note: memoria zerou dado ptr
+#    Time: 45 ns  Iteration: 2  Instance: /memory_tb
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Compile of memory.vhd was successful.
+# Compile of memory_state_machine.vhd was successful.
+# Compile of top.vhd was successful.
+# Compile of memory_state_machine_tb.vhd was successful.
+# Compile of top_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim work.memory_tb
+# End time: 15:36:20 on Apr 30,2021, Elapsed time: 0:16:15
+# Errors: 0, Warnings: 2
+# vsim work.memory_tb 
+# Start time: 15:36:20 on Apr 30,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_tb(tb)
+# Loading work.top(rtl)
+# Loading work.memory(rtl)
+# Loading work.memory_state_machine(rtl)
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# ** Note: aqui eh setado o endereco a ser lido
+#    Time: 10 ns  Iteration: 0  Instance: /memory_tb
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# ** Note: aqui eh feita a leitura do dado solicitado
+#    Time: 25 ns  Iteration: 2  Instance: /memory_tb
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+# ** Note: Memory output: 00000011
+#    Time: 40 ns  Iteration: 0  Instance: /memory_tb
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# ** Note: memoria zerou dado ptr
+#    Time: 45 ns  Iteration: 2  Instance: /memory_tb
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+restart
+# ** Note: aqui eh setado o endereco a ser lido
+#    Time: 10 ns  Iteration: 0  Instance: /memory_tb
+# ** Note: aqui eh feita a leitura do dado solicitado
+#    Time: 25 ns  Iteration: 2  Instance: /memory_tb
+# ** Note: Memory output: 00000011
+#    Time: 40 ns  Iteration: 0  Instance: /memory_tb
+# Break in Process stimulus at /home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd line 77
+step
+# ** Note: memoria zerou dado ptr
+#    Time: 45 ns  Iteration: 2  Instance: /memory_tb
+step
+step
+step
+step
+step
+step
+# Next activity is in 5 ns.
+step
+step
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# Compile of memory.vhd was successful.
+# Compile of memory_state_machine.vhd was successful.
+# Compile of top.vhd was successful.
+# Compile of memory_state_machine_tb.vhd was successful.
+# Compile of top_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim work.memory_tb
+# End time: 16:25:55 on Apr 30,2021, Elapsed time: 0:49:35
+# Errors: 0, Warnings: 2
+# vsim work.memory_tb 
+# Start time: 16:25:55 on Apr 30,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_tb(tb)
+# Loading work.top(rtl)
+# Loading work.memory(rtl)
+# Loading work.memory_state_machine(rtl)
+add wave -position end  sim:/memory_tb/ReqLeit_tb
+add wave -position end  sim:/memory_tb/dado_ptr_tb
+add wave -position end  sim:/memory_tb/Ack_tb_in_sm
+add wave -position end  sim:/memory_tb/Ack_tb_out_sm
+add wave -position end  sim:/memory_tb/address_tb
+add wave -position end  sim:/memory_tb/data_out_tb
+add wave -position end  sim:/memory_tb/reset_tb
+run
+# ** Note: aqui eh setado o endereco a ser lido
+#    Time: 10 ns  Iteration: 0  Instance: /memory_tb
+# ** Note: aqui eh feita a leitura do dado solicitado
+#    Time: 25 ns  Iteration: 2  Instance: /memory_tb
+# ** Note: Memory output: 00000011
+#    Time: 40 ns  Iteration: 0  Instance: /memory_tb
+# ** Note: memoria zerou dado ptr
+#    Time: 45 ns  Iteration: 2  Instance: /memory_tb
+# Compile of memory.vhd was successful.
+# Compile of memory_state_machine.vhd was successful.
+# Compile of top.vhd was successful.
+# Compile of memory_state_machine_tb.vhd was successful.
+# Compile of top_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim work.memory_tb
+# End time: 16:29:52 on Apr 30,2021, Elapsed time: 0:03:57
+# Errors: 0, Warnings: 2
+# vsim work.memory_tb 
+# Start time: 16:29:52 on Apr 30,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -84,5 +1005,196 @@ run
 #    Time: 40 ns  Iteration: 0  Instance: /memory_tb
 # ** Note: memoria zerou dado ptr
 #    Time: 45 ns  Iteration: 2  Instance: /memory_tb
-# End time: 11:38:29 on Apr 07,2021, Elapsed time: 0:08:05
-# Errors: 0, Warnings: 1
+# Compile of memory.vhd was successful.
+# Compile of memory_state_machine.vhd was successful.
+# Compile of top.vhd was successful.
+# Compile of memory_state_machine_tb.vhd was successful.
+# Compile of top_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim work.memory_tb
+# End time: 16:41:25 on Apr 30,2021, Elapsed time: 0:11:33
+# Errors: 0, Warnings: 2
+# vsim work.memory_tb 
+# Start time: 16:41:25 on Apr 30,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_tb(tb)
+# Loading work.top(rtl)
+# Loading work.memory(rtl)
+# Loading work.memory_state_machine(rtl)
+add wave -position end  sim:/memory_tb/Ack_tb_in_sm
+add wave -position end  sim:/memory_tb/Ack_tb_out_sm
+add wave -position end  sim:/memory_tb/dado_ptr_tb
+add wave -position end  sim:/memory_tb/ReqLeit_tb
+add wave -position end  sim:/memory_tb/clk_tb
+add wave -position end  sim:/memory_tb/address_tb
+add wave -position end  sim:/memory_tb/data_out_tb
+add wave -position end  sim:/memory_tb/reset_tb
+run
+# ** Note: aqui eh setado o endereco a ser lido
+#    Time: 10 ns  Iteration: 0  Instance: /memory_tb
+# ** Note: aqui eh feita a leitura do dado solicitado
+#    Time: 25 ns  Iteration: 2  Instance: /memory_tb
+# ** Note: Memory output: 00000011
+#    Time: 40 ns  Iteration: 0  Instance: /memory_tb
+# ** Note: memoria zerou dado ptr
+#    Time: 45 ns  Iteration: 2  Instance: /memory_tb
+# Compile of memory.vhd was successful.
+# Compile of memory_state_machine.vhd was successful.
+# Compile of top.vhd was successful.
+# Compile of memory_state_machine_tb.vhd was successful.
+# Compile of top_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim work.memory_tb
+# End time: 16:46:15 on Apr 30,2021, Elapsed time: 0:04:50
+# Errors: 0, Warnings: 2
+# vsim work.memory_tb 
+# Start time: 16:46:15 on Apr 30,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_tb(tb)
+# Loading work.top(rtl)
+# Loading work.memory(rtl)
+# Loading work.memory_state_machine(rtl)
+add wave -position end  sim:/memory_tb/Ack_tb_in_sm
+add wave -position end  sim:/memory_tb/Ack_tb_out_sm
+add wave -position end  sim:/memory_tb/dado_ptr_tb
+add wave -position end  sim:/memory_tb/ReqLeit_tb
+add wave -position end  sim:/memory_tb/clk_tb
+add wave -position end  sim:/memory_tb/address_tb
+add wave -position end  sim:/memory_tb/data_out_tb
+add wave -position end  sim:/memory_tb/reset_tb
+run
+# ** Note: aqui eh setado o endereco a ser lido
+#    Time: 10 ns  Iteration: 0  Instance: /memory_tb
+# ** Note: aqui eh feita a leitura do dado solicitado
+#    Time: 25 ns  Iteration: 2  Instance: /memory_tb
+# ** Note: Memory output: UUUUUUUU
+#    Time: 25 ns  Iteration: 2  Instance: /memory_tb
+# ** Note: memoria zerou dado ptr
+#    Time: 35 ns  Iteration: 2  Instance: /memory_tb
+# Compile of memory.vhd was successful.
+# Compile of memory_state_machine.vhd was successful.
+# Compile of top.vhd was successful.
+# Compile of memory_state_machine_tb.vhd was successful.
+# Compile of top_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim work.memory_tb
+# End time: 16:58:51 on Apr 30,2021, Elapsed time: 0:12:36
+# Errors: 0, Warnings: 2
+# vsim work.memory_tb 
+# Start time: 16:58:51 on Apr 30,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_tb(tb)
+# Loading work.top(rtl)
+# Loading work.memory(rtl)
+# Loading work.memory_state_machine(rtl)
+add wave -position end  sim:/memory_tb/Ack_tb_in_sm
+add wave -position end  sim:/memory_tb/Ack_tb_out_sm
+add wave -position end  sim:/memory_tb/dado_ptr_tb
+add wave -position end  sim:/memory_tb/ReqLeit_tb
+add wave -position end  sim:/memory_tb/clk_tb
+add wave -position end  sim:/memory_tb/address_tb
+add wave -position end  sim:/memory_tb/data_out_tb
+add wave -position end  sim:/memory_tb/reset_tb
+add wave -position end  sim:/memory_tb/stop_the_clock
+add wave -position end  sim:/memory_tb/clock_period
+# Can't move the Now cursor.
+run
+# ** Note: aqui eh setado o endereco a ser lido
+#    Time: 10 ns  Iteration: 0  Instance: /memory_tb
+# ** Note: aqui eh feita a leitura do dado solicitado
+#    Time: 25 ns  Iteration: 2  Instance: /memory_tb
+# ** Note: Memory output: UUUUUUUU
+#    Time: 25 ns  Iteration: 2  Instance: /memory_tb
+# ** Note: memoria zerou dado ptr
+#    Time: 35 ns  Iteration: 2  Instance: /memory_tb
+# ** Note: memoria zerou Ack
+#    Time: 35 ns  Iteration: 2  Instance: /memory_tb
+# Compile of memory.vhd was successful.
+# Compile of memory_state_machine.vhd was successful.
+# Compile of top.vhd was successful.
+# Compile of memory_state_machine_tb.vhd was successful.
+# Compile of top_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim work.memory_tb
+# End time: 17:04:13 on Apr 30,2021, Elapsed time: 0:05:22
+# Errors: 0, Warnings: 2
+# vsim work.memory_tb 
+# Start time: 17:04:13 on Apr 30,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_tb(tb)
+# Loading work.top(rtl)
+# Loading work.memory(rtl)
+# Loading work.memory_state_machine(rtl)
+add wave -position end  sim:/memory_tb/Ack_tb_in_sm
+add wave -position end  sim:/memory_tb/Ack_tb_out_sm
+add wave -position end  sim:/memory_tb/dado_ptr_tb
+add wave -position end  sim:/memory_tb/ReqLeit_tb
+add wave -position end  sim:/memory_tb/clk_tb
+add wave -position end  sim:/memory_tb/address_tb
+add wave -position end  sim:/memory_tb/data_out_tb
+add wave -position end  sim:/memory_tb/reset_tb
+add wave -position end  sim:/memory_tb/stop_the_clock
+add wave -position end  sim:/memory_tb/clock_period
+run
+# ** Note: aqui eh setado o endereco a ser lido
+#    Time: 10 ns  Iteration: 0  Instance: /memory_tb
+# ** Note: aqui eh feita a leitura do dado solicitado
+#    Time: 25 ns  Iteration: 2  Instance: /memory_tb
+# ** Note: Memory output: UUUUUUUU
+#    Time: 25 ns  Iteration: 2  Instance: /memory_tb
+# ** Note: memoria zerou dado ptr
+#    Time: 35 ns  Iteration: 2  Instance: /memory_tb
+# ** Note: memoria zerou Ack
+#    Time: 35 ns  Iteration: 2  Instance: /memory_tb
+# Compile of memory.vhd was successful.
+# Compile of memory_state_machine.vhd was successful.
+# Compile of top.vhd was successful.
+# Compile of memory_state_machine_tb.vhd was successful.
+# Compile of top_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim work.memory_tb
+# End time: 17:06:26 on Apr 30,2021, Elapsed time: 0:02:13
+# Errors: 0, Warnings: 2
+# vsim work.memory_tb 
+# Start time: 17:06:26 on Apr 30,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.memory_tb(tb)
+# Loading work.top(rtl)
+# Loading work.memory(rtl)
+# Loading work.memory_state_machine(rtl)
+add wave -position end  sim:/memory_tb/Ack_tb_in_sm
+add wave -position end  sim:/memory_tb/Ack_tb_out_sm
+add wave -position end  sim:/memory_tb/dado_ptr_tb
+add wave -position end  sim:/memory_tb/ReqLeit_tb
+add wave -position end  sim:/memory_tb/clk_tb
+add wave -position end  sim:/memory_tb/address_tb
+add wave -position end  sim:/memory_tb/data_out_tb
+add wave -position end  sim:/memory_tb/reset_tb
+add wave -position end  sim:/memory_tb/stop_the_clock
+add wave -position end  sim:/memory_tb/clock_period
+run
+# ** Note: aqui eh setado o endereco a ser lido
+#    Time: 10 ns  Iteration: 0  Instance: /memory_tb
+# ** Note: aqui eh feita a leitura do dado solicitado
+#    Time: 25 ns  Iteration: 2  Instance: /memory_tb
+# ** Note: Memory output: UUUUUUUU
+#    Time: 25 ns  Iteration: 2  Instance: /memory_tb
+# ** Note: memoria zerou dado ptr
+#    Time: 35 ns  Iteration: 2  Instance: /memory_tb
+# ** Note: memoria zerou Ack
+#    Time: 35 ns  Iteration: 2  Instance: /memory_tb

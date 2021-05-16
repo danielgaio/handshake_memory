@@ -65,13 +65,21 @@ begin
 				when s1=>
 					read_address	<= '1';
 					Ack_out_sm		<= '1';
+					
+					dado_ptr 		<= '0';
+					out_data 		<= '0';
 				when s2=>
 					Ack_out_sm		<= '0';
 					out_data		<= '1';
 					dado_ptr		<= '1';
+					
+					read_address 	<= '0';
 				when s3=>
 					out_data		<= '0';
 					dado_ptr		<= '0';
+					
+					Ack_out_sm		<= '0';
+					read_address 	<= '0';
 			end case;
 
 	end process;

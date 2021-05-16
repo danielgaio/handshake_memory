@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Apr  7 11:23:54 2021
+Analysis & Synthesis Status : Successful - Fri Apr 30 15:19:01 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : handshake_memory
 Top-level Entity Name : top
 Family : Cyclone IV E
-Total logic elements : 17
-    Total combinational functions : 9
+Total logic elements : 12
+    Total combinational functions : 4
     Dedicated logic registers : 12
 Total registers : 12
 Total pins : 18

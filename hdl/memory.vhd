@@ -52,13 +52,15 @@ architecture rtl of memory is
 
 begin
 
-	process(clk, read_address, address, out_data) begin
-		if(rising_edge(clk) and read_address = '1') then
+	process(clk, address, out_data) begin	-- TALVEZ SINAL address NÃO SEJA NECESSÁRIO
+		if (rising_edge(clk) and  read_address = '1') then
 			-- Register the address for reading
 			address_reg <= address;
-			if(out_data = '1') then
-				data_out <= ram(address_reg);
-			end if;
+		end if;
+
+		--if(rising_edge(clk) and out_data = '1') then
+		if(out_data = '1') then
+			data_out <= ram(address_reg);
 		end if;
 	end process;
 

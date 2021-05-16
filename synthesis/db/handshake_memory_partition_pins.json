@@ -32,6 +32,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "ReqLeit_t",
+					"strict" : false
+				},
+				{
+					"name" : "reset_t",
+					"strict" : false
+				},
+				{
+					"name" : "Ack_t_in_sm",
+					"strict" : false
+				},
+				{
 					"name" : "address_t[0]",
 					"strict" : false
 				},
@@ -45,18 +57,6 @@
 				},
 				{
 					"name" : "address_t[3]",
-					"strict" : false
-				},
-				{
-					"name" : "ReqLeit_t",
-					"strict" : false
-				},
-				{
-					"name" : "reset_t",
-					"strict" : false
-				},
-				{
-					"name" : "Ack_t_in_sm",
 					"strict" : false
 				}
 			]

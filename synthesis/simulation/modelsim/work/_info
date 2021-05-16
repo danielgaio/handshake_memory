@@ -10,11 +10,11 @@ z2
 cModel Technology
 Z0 d/home/daniel/Documents/GitHub/handshake_memory/synthesis/simulation/modelsim
 Ememory
-Z1 w1617751139
+Z1 w1619810954
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 15
+!i122 70
 R0
 Z5 8/home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd
 Z6 F/home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd
@@ -24,9 +24,9 @@ VTUl<?USclPM>8ch`l2DW<2
 !s100 hNU>7cHYYVVN<PR=cge>21
 Z7 OV;C;2020.1;71
 32
-Z8 !s110 1617805817
+Z8 !s110 1619813183
 !i10b 1
-Z9 !s108 1617805817.000000
+Z9 !s108 1619813182.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd|
 Z11 !s107 /home/daniel/Documents/GitHub/handshake_memory/hdl/memory.vhd|
 !i113 1
@@ -37,11 +37,11 @@ R2
 R3
 R4
 DEx4 work 6 memory 0 22 TUl<?USclPM>8ch`l2DW<2
-!i122 15
+!i122 70
 l53
-L25 43
-VdJ5@k``1Pb2b[idV6n7o91
-!s100 4MP@BAjfGS6XXY8l;=5`Z1
+L25 45
+VGP09P=_ZGU2Z6Ai<[jgoR1
+!s100 QDjG0LFanH5hUKIdOhbk63
 R7
 32
 R8
@@ -53,10 +53,10 @@ R11
 R12
 R13
 Ememory_state_machine
-Z14 w1617751000
+Z14 w1619805211
 R3
 R4
-!i122 16
+!i122 71
 R0
 Z15 8/home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd
 Z16 F/home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd
@@ -66,9 +66,9 @@ VVo];32[f?<;OR;F8B7Qf_3
 !s100 S^BNIGQ`3>BSh>fl9O<1n1
 R7
 32
-Z17 !s110 1617805818
+R8
 !i10b 1
-R9
+Z17 !s108 1619813183.000000
 Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd|
 Z19 !s107 /home/daniel/Documents/GitHub/handshake_memory/hdl/memory_state_machine.vhd|
 !i113 1
@@ -78,16 +78,16 @@ Artl
 R3
 R4
 DEx4 work 20 memory_state_machine 0 22 Vo];32[f?<;OR;F8B7Qf_3
-!i122 16
+!i122 71
 l25
-L17 63
-VG_Ho5:[Zo2L_iGXX72VOW2
-!s100 ::5eVk[<^GEG2XSYfG[]F0
+L17 71
+VQ@2z=emLch:haRGCLQD;J3
+!s100 Io0MhLk<;>fcmdJY<d<RE0
 R7
 32
-R17
+R8
 !i10b 1
-R9
+R17
 R18
 R19
 !i113 1
@@ -98,7 +98,7 @@ Z20 w1617754571
 R2
 R3
 R4
-!i122 18
+!i122 73
 R0
 Z21 8/home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_state_machine_tb.vhd
 Z22 F/home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_state_machine_tb.vhd
@@ -108,11 +108,11 @@ VicD5dENQ]PUI81i:izK1j2
 !s100 V5_Zi=04bLRS<E:kai5f<0
 R7
 32
-R17
+R8
 !i10b 1
-Z23 !s108 1617805818.000000
-Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_state_machine_tb.vhd|
-Z25 !s107 /home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_state_machine_tb.vhd|
+R17
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_state_machine_tb.vhd|
+Z24 !s107 /home/daniel/Documents/GitHub/handshake_memory/testbenches/memory_state_machine_tb.vhd|
 !i113 1
 R12
 R13
@@ -121,84 +121,84 @@ R2
 R3
 R4
 DEx4 work 23 memory_state_machine_tb 0 22 icD5dENQ]PUI81i:izK1j2
-!i122 18
+!i122 73
 l39
 L12 79
 VjU`mU?zj04@YXfzmCCiWT0
 !s100 327o^Kck;K;U180a2jQFc1
 R7
 32
-R17
+R8
 !i10b 1
+R17
 R23
 R24
-R25
 !i113 1
 R12
 R13
 Ememory_tb
-Z26 w1617805183
+Z25 w1619813174
 R4
 R3
 R2
-!i122 19
+!i122 74
 R0
-Z27 8/home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd
-Z28 F/home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd
+Z26 8/home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd
+Z27 F/home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd
 l0
 L6 1
 VUnUE0ji7UC^n`8Z]AAC?j2
 !s100 X4;nUKDWLK@PAkSD@aY0W1
 R7
 33
-R17
+R8
 !i10b 1
-R23
-Z29 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd|
-Z30 !s107 /home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd|
+R17
+Z28 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|/home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd|
+Z29 !s107 /home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd|
 !i113 1
-Z31 o-work work -2008 -explicit
+Z30 o-work work -2008 -explicit
 R13
 Atb
 R4
 R3
 R2
-Z32 DEx4 work 9 memory_tb 0 22 UnUE0ji7UC^n`8Z]AAC?j2
-!i122 19
+Z31 DEx4 work 9 memory_tb 0 22 UnUE0ji7UC^n`8Z]AAC?j2
+!i122 74
 l41
-Z33 L9 86
-Z34 V=X^?G1d<W`>GzT8j[N9hd3
-Z35 !s100 [XnJG7?JQ7eFH=U7jMa:l2
+L9 95
+VXci2f=;2XmAQ^no;8J3ia3
+!s100 dzeGX]W=bKE^Z1U0nYQkF0
 R7
 33
-R17
+R8
 !i10b 1
-R23
+R17
+R28
 R29
-R30
 !i113 1
-R31
+R30
 R13
 Etop
-Z36 w1617755490
+Z32 w1617755490
 R2
 R3
 R4
-!i122 17
+!i122 72
 R0
-Z37 8/home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd
-Z38 F/home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd
+Z33 8/home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd
+Z34 F/home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd
 l0
 L5 1
 V4g6K6G316J5LiB_=dHWiN2
 !s100 ID<ROc=_J8HY4SKe0Bhjm1
 R7
 32
-R17
+R8
 !i10b 1
-R23
-Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd|
-Z40 !s107 /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd|
+R17
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd|
+Z36 !s107 /home/daniel/Documents/GitHub/handshake_memory/hdl/top.vhd|
 !i113 1
 R12
 R13
@@ -207,18 +207,18 @@ R2
 R3
 R4
 DEx4 work 3 top 0 22 4g6K6G316J5LiB_=dHWiN2
-!i122 17
+!i122 72
 l51
 L21 52
 VZnjDAXiSfin?hGc^aFMRc3
 !s100 Olf`VW3JHhRdFNH7DmTmm0
 R7
 32
-R17
+R8
 !i10b 1
-R23
-R39
-R40
+R17
+R35
+R36
 !i113 1
 R12
 R13

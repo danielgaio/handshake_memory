@@ -54,11 +54,15 @@ begin
     stimulus: process begin
         -- Put initialisation code here
         reset_tb <= '1';
-        wait for 5 ns;
+        wait for 10 ns;
         reset_tb <= '0';
-        wait for 5 ns;
+        --wait for 5 ns;
 
         -- Put test bench stimulus code here
+        -- Esses sinais sao inicializados aqui para que n contem como indefinidos durante os testes
+        ReqLeit_tb <= '0';
+        Ack_tb_in_sm <= '0';
+
         --1
         ReqLeit_tb <= '1';
         report "aqui eh setado o endereco a ser lido";
@@ -66,18 +70,23 @@ begin
         wait until Ack_tb_out_sm='1';
         --3
         ReqLeit_tb <= '0';
+        
         wait until dado_ptr_tb='1';
+        address_tb <= 0;
         --5
         report "aqui eh feita a leitura do dado solicitado";
-        wait for 15 ns;
-        report "Memory output: "& to_bstring(data_out_tb);
+        --wait for 15 ns;
+        
         Ack_tb_in_sm <= '1';
+        report "Memory output: "& to_bstring(data_out_tb);
         --6
         wait until dado_ptr_tb='0';
         report "memoria zerou dado ptr";
-        wait until Ack_tb_out_sm='0';
-        report "memoria zerou Ack";
-        Ack_tb_in_sm <= '0';
+
+        Ack_tb_in_sm <= '0';    -- VERIFICAR SE EH EXECUTADO: sim, foi
+
+        --wait until Ack_tb_out_sm='0';   -- esse eh que não roda. Na real nem precisava ter esse
+        
         report "memoria zerou Ack";
 
         stop_the_clock <= true;

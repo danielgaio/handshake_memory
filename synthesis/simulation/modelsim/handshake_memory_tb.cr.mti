@@ -33,13 +33,4 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity top
 -- Compiling architecture rtl of top
 
-} {} {}} /home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd {1 {vcom -work work -2008 -explicit -stats=none /home/daniel/Documents/GitHub/handshake_memory/testbenches/top_tb.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity memory_tb
--- Compiling architecture tb of memory_tb
-
 } {} {}}
